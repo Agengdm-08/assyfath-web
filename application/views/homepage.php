@@ -12,7 +12,7 @@
            mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
            repellendus deleniti vel. Minus et tempore modi architecto.
          </p>
-         <a href="produk-detail-one.html" class="btn-get-started animate__animated animate__fadeInUp">Detail</a>
+         <a href="<?php echo site_url("product/detail?id=1") ?>" class="btn-get-started animate__animated animate__fadeInUp">Detail</a>
        </div>
      </div>
 

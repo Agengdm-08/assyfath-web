@@ -62,28 +62,7 @@
     </div>
   </header>
   <!-- End Header -->
-  <main id="main">
-    <!-- ======= Our Portfolio Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2><?php echo $title ?></h2>
-          <ol>
-            <li><a href="<?php echo site_url() ?>">Beranda</a></li>
-            <?php
-            if (isset($subtitle)) {
-              echo '<li><a href="' . $this->agent->referrer() . '">' . $title . '</a></li>
-              <li>' . $subtitle . '</li>';
-            } else {
-              echo "<li>$title</li>";
-            }
-            ?>
-          </ol>
-        </div>
-      </div>
-    </section> <!-- End Our Portfolio Section -->
-    <?php $this->load->view($page); ?>
-  </main>
+  <?php $this->load->view($page); ?>
   <!-- ======= WhatsApp ======= -->
   <div style="position: fixed; right: 20px; bottom: 80px">
     <a href="https://api.whatsapp.com/send?phone=+6285770594004&text=ASSALAMMUALAIKUM TOKO ASSYIFATH. SAYA INGIN PESAN PRODUK ANDA" target="_blank">

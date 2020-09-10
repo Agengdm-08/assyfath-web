@@ -1,4 +1,17 @@
-
+<main id="main">
+  <!-- ======= Breadcumb Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2><?php echo $title ?></h2>
+        <ol>
+          <li><a href="<?php echo site_url() ?>">Beranda</a></li>
+          <li><?php echo $title ?></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- End Breadcumb Section -->
   <!-- ======= Contact Section ======= -->
   <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
     <div class="container">
@@ -73,3 +86,4 @@
     </div>
   </section>
   <!-- End Map Section -->
+</main>
