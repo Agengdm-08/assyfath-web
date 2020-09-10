@@ -52,7 +52,7 @@
         <ul>
           <li><a href="<?php echo site_url() ?>">Beranda</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="produk.html">Produk</a></li>
+          <li><a href="product.html">Produk</a></li>
           <li><a href="gallery.html">Galeri</a></li>
           <li><a href="testimoni.html">Testimoni</a></li>
           <li><a href="contact.html">Kontak Kami</a></li>
@@ -70,13 +70,18 @@
           <h2><?php echo $title ?></h2>
           <ol>
             <li><a href="<?php echo site_url() ?>">Beranda</a></li>
-            <li><?php echo $title ?></li>
-            <?php echo isset($subtitle) ? "<li><?php echo $subtitle ?></li>" : ""; ?>
+            <?php
+            if (isset($subtitle)) {
+              echo '<li><a href="' . $this->agent->referrer() . '">' . $title . '</a></li>
+              <li>' . $subtitle . '</li>';
+            } else {
+              echo "<li>$title</li>";
+            }
+            ?>
           </ol>
         </div>
       </div>
-    </section>
-    <!-- End Our Portfolio Section -->
+    </section> <!-- End Our Portfolio Section -->
     <?php $this->load->view($page); ?>
   </main>
   <!-- ======= WhatsApp ======= -->
